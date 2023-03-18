@@ -15,6 +15,18 @@
       });
   });
 
+  // Update the score and check for a winner
+  function updateScore() {
+      scoreDiv.textContent = `Score: Human ${playerScore}-${computerScore} Computer`;
+      if (playerScore === 5) {
+          winnerDiv.textContent = "Player wins!";
+          disableButtons();
+      } else if (computerScore === 5) {
+          winnerDiv.textContent = "Computer wins!";
+          disableButtons();
+      }
+  }
+
   // Play a round of the game
   function playRound(playerSelection, computerSelection) {
       if (playerSelection === computerSelection) {
@@ -29,18 +41,6 @@
       } else {
           computerScore++;
           return;
-      }
-  }
-
-  // Update the score and check for a winner
-  function updateScore() {
-      scoreDiv.textContent = `Score: Human ${playerScore}-${computerScore} Computer`;
-      if (playerScore === 5) {
-          winnerDiv.textContent = "Player wins!";
-          disableButtons();
-      } else if (computerScore === 5) {
-          winnerDiv.textContent = "Computer wins!";
-          disableButtons();
       }
   }
 
