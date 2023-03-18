@@ -10,7 +10,7 @@
       button.addEventListener('click', () => {
           const playerSelection = button.id;
           const computerSelection = ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
-          const result = playRound(playerSelection, computerSelection);
+          playRound(playerSelection, computerSelection);
           updateScore();
       });
   });
