@@ -30,7 +30,7 @@
   // Play a round of the game
   function playRound(playerSelection, computerSelection) {
       if (playerSelection === computerSelection) {
-          return "tie";
+          return;
       } else if (
           (playerSelection === 'rock' && computerSelection === 'scissors') ||
           (playerSelection === 'paper' && computerSelection === 'rock') ||
