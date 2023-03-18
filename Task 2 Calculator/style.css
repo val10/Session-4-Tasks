@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 9%;
+}
+
+h1 {
+    margin-bottom: 3%;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+}
+
+table {
+    width: 300px;
+    height: 800px;
+}
+
+#display {
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+table tr {
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+button {
+    border: 2px solid rgb(77, 70, 51);
+    border-radius: 8px;
+    width: 71px;
+    height: 50px;
+    font-size: larger;
+    font-family: 'Lobster', cursive;
+    background-color: rgb(196, 245, 226);
+}
+
+button:hover {
+    background-color: rgb(115, 231, 187);
+    transition: all 0.5s ease;
+}
+
+#btnPlus,
+#btnMinus,
+#btnMultiply,
+#btnDivide {
+    background-color: rgb(255, 253, 125);
+}
+
+#btnPlus:hover,
+#btnMinus:hover,
+#btnMultiply:hover,
+#btnDivide:hover {
+    background-color: rgb(236, 170, 48);
+    transition: all 0.5s ease;
+}
+
+#btnClear {
+    background-color: rgba(235, 44, 38, 0.315);
+}

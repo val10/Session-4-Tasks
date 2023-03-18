@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>JS Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>JS Calculator</h1>
+        <div>
+            <input type="text" id="display" disabled>
+            <table>
+                <tr>
+                    <td><button id="btn7" onclick="addToDisplay('7')">7</button></td>
+                    <td><button id="btn8" onclick="addToDisplay('8')">8</button></td>
+                    <td><button id="btn9" onclick="addToDisplay('9')">9</button></td>
+                    <td><button id="btnPlus" onclick="setOperation('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn4" onclick="addToDisplay('4')">4</button></td>
+                    <td><button id="btn5" onclick="addToDisplay('5')">5</button></td>
+                    <td><button id="btn6" onclick="addToDisplay('6')">6</button></td>
+                    <td><button id="btnMinus" onclick="setOperation('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn1" onclick="addToDisplay('1')">1</button></td>
+                    <td><button id="btn2" onclick="addToDisplay('2')">2</button></td>
+                    <td><button id="btn3" onclick="addToDisplay('3')">3</button></td>
+                    <td><button id="btnMultiply" onclick="setOperation('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn0" onclick="addToDisplay('0')">0</button></td>
+                    <td><button id="btnClear" onclick="clearDisplay()">C</button></td>
+                    <td><button id="btnEquals" onclick="operate()">=</button></td>
+                    <td><button id="btnDivide" onclick="setOperation('/')">/</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
