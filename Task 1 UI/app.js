@@ -5,6 +5,16 @@
   const scoreDiv = document.querySelector('#score');
   const winnerDiv = document.querySelector('#winner');
 
+  // Add event listeners to the buttons
+  buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+          const playerSelection = button.id;
+          const computerSelection = ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
+          const result = playRound(playerSelection, computerSelection);
+          updateScore();
+      });
+  });
+
   // Play a round of the game
   function playRound(playerSelection, computerSelection) {
       if (playerSelection === computerSelection) {
@@ -40,14 +50,3 @@
           buttons[i].disabled = true;
       }
   }
-
-
-  // Add event listeners to the buttons
-  buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-          const playerSelection = button.id;
-          const computerSelection = ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
-          const result = playRound(playerSelection, computerSelection);
-          updateScore();
-      });
-  });
