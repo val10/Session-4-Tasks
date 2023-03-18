@@ -25,10 +25,10 @@
           (playerSelection === 'scissors' && computerSelection === 'paper')
       ) {
           playerScore++;
-          return "player";
+          return;
       } else {
           computerScore++;
-          return "computer";
+          return;
       }
   }
 
